@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ntops-lab"
+version = "0.1.0"
+description = "Experimental NineToothed operator lab with generated kernels, coverage reports, and smoke tests."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "ntops.lab contributors" }
+]
+keywords = ["ninetoothed", "cuda", "operators", "kernels", "gpu"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Code Generators",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+gpu = ["torch", "ninetoothed"]
+
+[project.scripts]
+ntops-lab = "ntops_lab.cli:main"
+
+[tool.setuptools.package-data]
+ntops_lab = ["operator_manifest.json"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = ["-q", "--strict-config", "--strict-markers"]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+  "gpu: tests that require CUDA, PyTorch, and NineToothed",
+]
