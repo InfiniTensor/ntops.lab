@@ -27,7 +27,7 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
-gpu = ["torch", "ninetoothed"]
+gpu = ["torch", "ninetoothed", "nvidia-ml-py"]
 
 [project.scripts]
 ntops-lab = "ntops_lab.cli:main"

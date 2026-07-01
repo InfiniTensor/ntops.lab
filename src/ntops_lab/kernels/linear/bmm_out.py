@@ -1,11 +1,11 @@
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
-from ninetoothed import Tensor
+from ninetoothed import Tensor, block_size
 
-BM = 32
-BN = 32
-BK = 32
+BM = block_size()
+BN = block_size()
+BK = block_size()
 
 def arrangement(a, b, out):
     out_arr = out.tile((BM, BN))
@@ -19,9 +19,9 @@ def application(a, b, out):
     acc = ntl.zeros(out.shape, dtype=ntl.float32)
     for k in range(a.shape[0]):
         acc += ntl.dot(a[k], b[k])
-    out = acc
+    out = acc.to(ntl.float16)
 
-kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(2), Tensor(2)), kernel_name="ntops_lab_bmm_out_2d", max_num_configs=1)
+kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(2), Tensor(2)), kernel_name="ntops_lab_bmm_out_2d")
 
 def run(*inputs):
     a, b = inputs

@@ -1,20 +1,34 @@
+import functools
+
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
 from ninetoothed import Tensor
 
-DIM = 32
 
-def arrangement(x, out):
-    return x.tile((1, DIM)), out.tile((1,))
+def arrangement(x, out, dim):
+    return x.tile((1, dim.value)), out.tile((1,)), dim
 
-def application(x, out):
+
+def application(x, out, dim):
     out = ntl.max(x, axis=1) != 0.0
 
-kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(1)), kernel_name="fg_extra_any_dim", max_num_configs=1)
+
+@functools.cache
+def _kernel(dim):
+    dim_tensor = Tensor(0, constexpr=True, value=dim, name="dim")
+    return ninetoothed.make(
+        arrangement,
+        application,
+        (Tensor(2), Tensor(1), dim_tensor),
+        kernel_name=f"ntops_lab_any_dim_d{dim}",
+        max_num_configs=1,
+    )
+
 
 def run(*inputs):
-    (x,) = inputs
+    x, = inputs
     out = torch.empty((x.shape[0],), device=x.device, dtype=torch.bool)
-    kernel(x, out)
+    dim = x.shape[-1]
+    _kernel(dim)(x, out, dim)
     return out

@@ -19,7 +19,7 @@ def application(a, b, out):
     acc = ntl.zeros(out.shape, dtype=ntl.float32)
     for k in range(a.shape[0]):
         acc += ntl.dot(a[k], b[k])
-    out = acc
+    out = acc.to(ntl.float16)
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(2), Tensor(2)), kernel_name="ntops_lab_bmm_2d")
 

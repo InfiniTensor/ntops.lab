@@ -1,0 +1,20 @@
+import torch
+import ninetoothed
+from ninetoothed import Tensor, block_size
+
+BLOCK = block_size()
+
+def arrangement(x, out):
+    x_arr, out_arr = x.permute((2, 3, 0, 1)).flatten(), out.flatten()
+    return x_arr.tile((BLOCK,)), out_arr.tile((BLOCK,))
+
+def application(x, out):
+    out = x
+
+kernel = ninetoothed.make(arrangement, application, (Tensor(4), Tensor(4)), kernel_name="ntops_lab_permute_4d_2301")
+
+def run(*inputs):
+    x, = inputs
+    out = torch.empty((x.shape[2], x.shape[3], x.shape[0], x.shape[1]), device=x.device, dtype=x.dtype)
+    kernel(x, out)
+    return out

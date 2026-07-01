@@ -1,3 +1,9 @@
+# Auto-generated from operator_manifest.json. Do not edit by hand.
+
+def affine_grid(*args, **kwargs):
+    from ntops_lab.kernels.creation.affine_grid import run
+    return run(*args, **kwargs)
+
 def eye(*args, **kwargs):
     from ntops_lab.kernels.creation.eye import run
     return run(*args, **kwargs)
@@ -18,6 +24,10 @@ def new_full(*args, **kwargs):
     from ntops_lab.kernels.creation.new_full import run
     return run(*args, **kwargs)
 
+def one_hot(*args, **kwargs):
+    from ntops_lab.kernels.creation.one_hot import run
+    return run(*args, **kwargs)
+
 def ones(*args, **kwargs):
     from ntops_lab.kernels.creation.ones import run
     return run(*args, **kwargs)
@@ -33,5 +43,3 @@ def zeros(*args, **kwargs):
 def zeros_like(*args, **kwargs):
     from ntops_lab.kernels.creation.zeros_like import run
     return run(*args, **kwargs)
-
-__all__ = ['eye', 'eye_m', 'full', 'full_like', 'new_full', 'ones', 'ones_like', 'zeros', 'zeros_like']

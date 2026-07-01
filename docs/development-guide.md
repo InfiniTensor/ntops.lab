@@ -23,8 +23,8 @@ def check(...): ...
 7. Run:
 
 ```bash
-python scripts/check_manifest.py
-ntops-lab check my_op
+python -m pytest
+NTOPS_RUN_OPERATOR_VALIDATION=1 python -m pytest tests/test_operator_gpu_validation.py -k my_op
 ```
 
 ## Unsupported Operators
@@ -42,9 +42,9 @@ their blocker analysis in documentation until there is a real implementation.
 
 ## Validation Levels
 
-- **Catalog validation**: no GPU required; checks manifest/file consistency.
-- **Single-op smoke**: compiles and runs one NineToothed kernel.
-- **Batch smoke**: run selected representative operators by category.
+- **Catalog validation**: no GPU required; run by default pytest.
+- **Single-op GPU validation**: use `NTOPS_RUN_OPERATOR_VALIDATION=1` with a pytest `-k` selector.
+- **Full GPU validation**: run `tests/test_operator_gpu_validation.py` with `NTOPS_RUN_OPERATOR_VALIDATION=1`.
 
 Full GPU coverage is intentionally not part of default `pytest`, because kernel
 compilation requires a CUDA/NineToothed environment.

@@ -12,7 +12,7 @@ operator development, then smoke-tested against PyTorch on CUDA.
 
 The canonical catalog contains:
 
-- 246 runnable NineToothed implementations
+- 1124 runnable operator implementations
 - 0 unsupported/scaffold source files included in the commit-ready tree
 - gap analysis retained in documentation only
 
@@ -46,9 +46,6 @@ docs/
   support-analysis.md        # missing capability analysis
 tests/
   test_catalog.py            # CPU-only metadata tests
-scripts/
-  run_operator.py            # run one operator's check()
-  check_manifest.py          # validate manifest/file consistency
 ```
 
 ## Install
@@ -106,13 +103,13 @@ out = mm(torch.randn(32, 32, device="cuda", dtype=torch.float16),
          torch.randn(32, 32, device="cuda", dtype=torch.float16))
 ```
 
-## Run A Kernel Smoke Test
+## Run Operator Tests
 
 On a CUDA machine with NineToothed available:
 
 ```bash
-ntops-lab check add
-python scripts/run_operator.py softmax
+NTOPS_RUN_OPERATOR_VALIDATION=1 python -m pytest tests/test_operator_gpu_validation.py -k add
+NTOPS_RUN_OPERATOR_VALIDATION=1 python -m pytest tests/test_operator_gpu_validation.py -k softmax
 ```
 
 Kernel modules expose `run`; test specs expose:
@@ -129,20 +126,17 @@ the PyTorch reference, and compares results.
 
 ## Run Repository Tests
 
-CPU-only catalog checks:
+Default repository checks:
 
 ```bash
 python -m pytest
-python scripts/check_manifest.py
-python -m compileall -q src scripts tests
 ```
 
-GPU smoke checks should be run selectively:
+Full GPU operator validation is available through pytest and is disabled by
+default because it compiles and runs every registered kernel:
 
 ```bash
-ntops-lab check add
-ntops-lab check mm
-ntops-lab check softmax
+NTOPS_RUN_OPERATOR_VALIDATION=1 python -m pytest tests/test_operator_gpu_validation.py
 ```
 
 Running every GPU check can take a while because many operators compile kernels
@@ -160,14 +154,6 @@ Inspect the current caches:
 
 ```bash
 ntops-lab cache status
-```
-
-Precompile and validate selected kernels before a test or benchmark session:
-
-```bash
-ntops-lab cache warm softmax mm
-ntops-lab cache warm --category linear
-ntops-lab cache warm --all
 ```
 
 Changing a kernel implementation or its NineToothed compilation configuration

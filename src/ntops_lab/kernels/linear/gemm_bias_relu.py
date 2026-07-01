@@ -13,7 +13,7 @@ def arrangement(a, b, bias, out):
     a_arr.dtype = a_arr.dtype.squeeze(0)
     b_arr = b.tile((BK, BN)).tile((-1, 1)).expand((out_arr.shape[0], -1))
     b_arr.dtype = b_arr.dtype.squeeze(1)
-    bias_arr = bias.tile((BN,)).expand((out_arr.shape[0], -1))
+    bias_arr = bias.tile((BN,)).unsqueeze(0).expand((out_arr.shape[0], -1))
     return a_arr, b_arr, bias_arr, out_arr
 
 def application(a, b, bias, out):
@@ -21,7 +21,7 @@ def application(a, b, bias, out):
     for k in range(a.shape[0]):
         acc += ntl.dot(a[k], b[k])
     value = acc + bias
-    out = ntl.maximum(value, 0.0)
+    out = (ntl.maximum(value, 0.0)).to(ntl.float16)
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(2), Tensor(1), Tensor(2)), kernel_name="ntops_lab_gemm_bias_relu")
 

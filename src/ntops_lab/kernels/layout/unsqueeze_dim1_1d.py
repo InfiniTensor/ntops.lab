@@ -1,0 +1,20 @@
+import torch
+import ninetoothed
+from ninetoothed import Tensor, block_size
+
+BLOCK = block_size()
+
+def arrangement(x, out):
+    x_arr, out_arr = x.unsqueeze(1).flatten(), out.flatten()
+    return x_arr.tile((BLOCK,)), out_arr.tile((BLOCK,))
+
+def application(x, out):
+    out = x
+
+kernel = ninetoothed.make(arrangement, application, (Tensor(1), Tensor(2)), kernel_name="ntops_lab_unsqueeze_dim1_1d")
+
+def run(*inputs):
+    x, = inputs
+    out = torch.empty((x.shape[0], 1), device=x.device, dtype=x.dtype)
+    kernel(x, out)
+    return out

@@ -1,135 +1,9 @@
 [
   {
-    "op": "eye",
+    "op": "_safe_softmax",
     "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/eye.py",
-    "reason": ""
-  },
-  {
-    "op": "eye_m",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/eye_m.py",
-    "reason": ""
-  },
-  {
-    "op": "full",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/full.py",
-    "reason": ""
-  },
-  {
-    "op": "full_like",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/full_like.py",
-    "reason": ""
-  },
-  {
-    "op": "new_full",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/new_full.py",
-    "reason": ""
-  },
-  {
-    "op": "ones",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/ones.py",
-    "reason": ""
-  },
-  {
-    "op": "ones_like",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/ones_like.py",
-    "reason": ""
-  },
-  {
-    "op": "zeros",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/zeros.py",
-    "reason": ""
-  },
-  {
-    "op": "zeros_like",
-    "status": "done",
-    "category": "creation",
-    "file": "kernels/creation/zeros_like.py",
-    "reason": ""
-  },
-  {
-    "op": "cumsum",
-    "status": "done",
-    "category": "fused/fla",
-    "file": "kernels/fused/fla/cumsum.py",
-    "reason": ""
-  },
-  {
-    "op": "add_rms_norm",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/add_rms_norm.py",
-    "reason": ""
-  },
-  {
-    "op": "fused_add_rms_norm",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/fused_add_rms_norm.py",
-    "reason": ""
-  },
-  {
-    "op": "geglu",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/geglu.py",
-    "reason": ""
-  },
-  {
-    "op": "gelu_and_mul",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/gelu_and_mul.py",
-    "reason": ""
-  },
-  {
-    "op": "reglu",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/reglu.py",
-    "reason": ""
-  },
-  {
-    "op": "rotary_embedding",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/rotary_embedding.py",
-    "reason": ""
-  },
-  {
-    "op": "silu_and_mul",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/silu_and_mul.py",
-    "reason": ""
-  },
-  {
-    "op": "skip_layernorm",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/skip_layernorm.py",
-    "reason": ""
-  },
-  {
-    "op": "swiglu",
-    "status": "done",
-    "category": "fused/general",
-    "file": "kernels/fused/general/swiglu.py",
+    "category": "reduction",
+    "file": "kernels/reduction/safe_softmax.py",
     "reason": ""
   },
   {
@@ -137,286 +11,6 @@
     "status": "done",
     "category": "layout",
     "file": "kernels/layout/upsample_nearest_exact1d.py",
-    "reason": ""
-  },
-  {
-    "op": "alias_copy",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/alias_copy.py",
-    "reason": ""
-  },
-  {
-    "op": "avg_pool2d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/avg_pool2d.py",
-    "reason": ""
-  },
-  {
-    "op": "avg_pool3d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/avg_pool3d.py",
-    "reason": ""
-  },
-  {
-    "op": "contiguous",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/contiguous.py",
-    "reason": ""
-  },
-  {
-    "op": "conv1d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/conv1d.py",
-    "reason": ""
-  },
-  {
-    "op": "conv2d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/conv2d.py",
-    "reason": ""
-  },
-  {
-    "op": "conv3d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/conv3d.py",
-    "reason": ""
-  },
-  {
-    "op": "conv_depthwise2d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/conv_depthwise2d.py",
-    "reason": ""
-  },
-  {
-    "op": "conv_transpose1d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/conv_transpose1d.py",
-    "reason": ""
-  },
-  {
-    "op": "conv_transpose2d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/conv_transpose2d.py",
-    "reason": ""
-  },
-  {
-    "op": "copy",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/copy.py",
-    "reason": ""
-  },
-  {
-    "op": "cudnn_convolution",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/cudnn_convolution.py",
-    "reason": ""
-  },
-  {
-    "op": "max_pool2d_with_indices",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/max_pool2d_with_indices.py",
-    "reason": ""
-  },
-  {
-    "op": "max_pool3d_with_indices",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/max_pool3d_with_indices.py",
-    "reason": ""
-  },
-  {
-    "op": "resolve_conj",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/resolve_conj.py",
-    "reason": ""
-  },
-  {
-    "op": "to",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/to.py",
-    "reason": ""
-  },
-  {
-    "op": "upsample_linear1d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/upsample_linear1d.py",
-    "reason": ""
-  },
-  {
-    "op": "upsample_nearest1d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/upsample_nearest1d.py",
-    "reason": ""
-  },
-  {
-    "op": "upsample_nearest2d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/upsample_nearest2d.py",
-    "reason": ""
-  },
-  {
-    "op": "upsample_nearest3d",
-    "status": "done",
-    "category": "layout",
-    "file": "kernels/layout/upsample_nearest3d.py",
-    "reason": ""
-  },
-  {
-    "op": "addbmm",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/addbmm.py",
-    "reason": ""
-  },
-  {
-    "op": "addmm",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/addmm.py",
-    "reason": ""
-  },
-  {
-    "op": "addmv",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/addmv.py",
-    "reason": ""
-  },
-  {
-    "op": "addr",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/addr.py",
-    "reason": ""
-  },
-  {
-    "op": "baddbmm",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/baddbmm.py",
-    "reason": ""
-  },
-  {
-    "op": "bmm",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/bmm.py",
-    "reason": ""
-  },
-  {
-    "op": "bmm_out",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/bmm_out.py",
-    "reason": ""
-  },
-  {
-    "op": "dot",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/dot.py",
-    "reason": ""
-  },
-  {
-    "op": "gemm_bias",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/gemm_bias.py",
-    "reason": ""
-  },
-  {
-    "op": "gemm_bias_gelu",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/gemm_bias_gelu.py",
-    "reason": ""
-  },
-  {
-    "op": "gemm_bias_relu",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/gemm_bias_relu.py",
-    "reason": ""
-  },
-  {
-    "op": "grouped_mm",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/grouped_mm.py",
-    "reason": ""
-  },
-  {
-    "op": "linear",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/linear.py",
-    "reason": ""
-  },
-  {
-    "op": "mm",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/mm.py",
-    "reason": ""
-  },
-  {
-    "op": "mm_out",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/mm_out.py",
-    "reason": ""
-  },
-  {
-    "op": "mv",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/mv.py",
-    "reason": ""
-  },
-  {
-    "op": "outer",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/outer.py",
-    "reason": ""
-  },
-  {
-    "op": "vdot",
-    "status": "done",
-    "category": "linear",
-    "file": "kernels/linear/vdot.py",
-    "reason": ""
-  },
-  {
-    "op": "layernorm",
-    "status": "done",
-    "category": "normalization",
-    "file": "kernels/normalization/layernorm.py",
-    "reason": ""
-  },
-  {
-    "op": "rms_norm",
-    "status": "done",
-    "category": "normalization",
-    "file": "kernels/normalization/rms_norm.py",
     "reason": ""
   },
   {
@@ -434,6 +28,13 @@
     "reason": ""
   },
   {
+    "op": "abs_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/abs_out.py",
+    "reason": ""
+  },
+  {
     "op": "absolute",
     "status": "done",
     "category": "pointwise",
@@ -441,10 +42,66 @@
     "reason": ""
   },
   {
+    "op": "absolute_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/absolute_out.py",
+    "reason": ""
+  },
+  {
     "op": "acos",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/acos.py",
+    "reason": ""
+  },
+  {
+    "op": "acos_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/acos_out.py",
+    "reason": ""
+  },
+  {
+    "op": "adaptive_avg_pool1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/adaptive_avg_pool1d.py",
+    "reason": ""
+  },
+  {
+    "op": "adaptive_avg_pool2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/adaptive_avg_pool2d.py",
+    "reason": ""
+  },
+  {
+    "op": "adaptive_avg_pool3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/adaptive_avg_pool3d.py",
+    "reason": ""
+  },
+  {
+    "op": "adaptive_max_pool1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/adaptive_max_pool1d.py",
+    "reason": ""
+  },
+  {
+    "op": "adaptive_max_pool2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/adaptive_max_pool2d.py",
+    "reason": ""
+  },
+  {
+    "op": "adaptive_max_pool3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/adaptive_max_pool3d.py",
     "reason": ""
   },
   {
@@ -462,10 +119,350 @@
     "reason": ""
   },
   {
+    "op": "add_layer_norm_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_abs.py"
+  },
+  {
+    "op": "add_layer_norm_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_cube.py"
+  },
+  {
+    "op": "add_layer_norm_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_elu.py"
+  },
+  {
+    "op": "add_layer_norm_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_hardshrink.py"
+  },
+  {
+    "op": "add_layer_norm_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_hardsigmoid.py"
+  },
+  {
+    "op": "add_layer_norm_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_hardtanh.py"
+  },
+  {
+    "op": "add_layer_norm_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_logsigmoid.py"
+  },
+  {
+    "op": "add_layer_norm_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_neg.py"
+  },
+  {
+    "op": "add_layer_norm_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_relu6.py"
+  },
+  {
+    "op": "add_layer_norm_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_softshrink.py"
+  },
+  {
+    "op": "add_layer_norm_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_square.py"
+  },
+  {
+    "op": "add_layer_norm_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "add_layer_norm_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_layer_norm_tanhshrink.py"
+  },
+  {
+    "op": "add_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/add_out.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_abs.py"
+  },
+  {
+    "op": "add_rms_norm_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_cube.py"
+  },
+  {
+    "op": "add_rms_norm_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_elu.py"
+  },
+  {
+    "op": "add_rms_norm_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_hardshrink.py"
+  },
+  {
+    "op": "add_rms_norm_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_hardsigmoid.py"
+  },
+  {
+    "op": "add_rms_norm_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_hardtanh.py"
+  },
+  {
+    "op": "add_rms_norm_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_logsigmoid.py"
+  },
+  {
+    "op": "add_rms_norm_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_neg.py"
+  },
+  {
+    "op": "add_rms_norm_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_relu6.py"
+  },
+  {
+    "op": "add_rms_norm_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_softshrink.py"
+  },
+  {
+    "op": "add_rms_norm_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_square.py"
+  },
+  {
+    "op": "add_rms_norm_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "add_rms_norm_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/add_rms_norm_tanhshrink.py"
+  },
+  {
+    "op": "add_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/add_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "add_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/add_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "add_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/add_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "add_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/add_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "addbmm",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addbmm.py",
+    "reason": ""
+  },
+  {
     "op": "addcdiv",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/addcdiv.py",
+    "reason": ""
+  },
+  {
+    "op": "addcdiv_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/addcdiv_out.py",
     "reason": ""
   },
   {
@@ -476,10 +473,285 @@
     "reason": ""
   },
   {
+    "op": "addcmul_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/addcmul_out.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm_abs",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_abs.py"
+  },
+  {
+    "op": "addmm_cube",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_cube.py"
+  },
+  {
+    "op": "addmm_elu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_elu.py"
+  },
+  {
+    "op": "addmm_gelu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm_hardshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_hardshrink.py"
+  },
+  {
+    "op": "addmm_hardsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_hardsigmoid.py"
+  },
+  {
+    "op": "addmm_hardtanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_hardtanh.py"
+  },
+  {
+    "op": "addmm_leaky_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm_logsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_logsigmoid.py"
+  },
+  {
+    "op": "addmm_neg",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_neg.py"
+  },
+  {
+    "op": "addmm_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm_relu6",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_relu6.py"
+  },
+  {
+    "op": "addmm_sigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm_silu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm_softshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_softshrink.py"
+  },
+  {
+    "op": "addmm_square",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_square.py"
+  },
+  {
+    "op": "addmm_tanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "addmm_tanhshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmm_tanhshrink.py"
+  },
+  {
+    "op": "addmv",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addmv.py",
+    "reason": ""
+  },
+  {
+    "op": "addr",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/addr.py",
+    "reason": ""
+  },
+  {
+    "op": "affine_grid",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/affine_grid.py",
+    "reason": ""
+  },
+  {
+    "op": "alias_copy",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/alias_copy.py",
+    "reason": ""
+  },
+  {
+    "op": "all_dim",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/all_dim.py",
+    "reason": ""
+  },
+  {
+    "op": "all_dims",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/all_dims.py",
+    "reason": ""
+  },
+  {
+    "op": "alpha_dropout",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/alpha_dropout.py",
+    "reason": ""
+  },
+  {
+    "op": "amax",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amax.py",
+    "reason": ""
+  },
+  {
+    "op": "amax_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amax_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "amax_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amax_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "amax_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amax_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "amax_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amax_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "amin_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amin_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "amin_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amin_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "amin_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amin_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "amin_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/amin_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "aminmax",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/aminmax.py",
+    "reason": ""
+  },
+  {
     "op": "angle",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/angle.py",
+    "reason": ""
+  },
+  {
+    "op": "angle_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/angle_out.py",
+    "reason": ""
+  },
+  {
+    "op": "any",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/any.py",
+    "reason": ""
+  },
+  {
+    "op": "any_dim",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/any_dim.py",
+    "reason": ""
+  },
+  {
+    "op": "any_dims",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/any_dims.py",
     "reason": ""
   },
   {
@@ -494,6 +766,13 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/arcsinh_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "arcsinh_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/arcsinh_out.py",
     "reason": ""
   },
   {
@@ -518,6 +797,13 @@
     "reason": ""
   },
   {
+    "op": "asinh_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/asinh_out.py",
+    "reason": ""
+  },
+  {
     "op": "atan",
     "status": "done",
     "category": "pointwise",
@@ -532,10 +818,129 @@
     "reason": ""
   },
   {
+    "op": "atan2_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/atan2_out.py",
+    "reason": ""
+  },
+  {
+    "op": "atan2_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/atan2_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "atan2_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/atan2_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "atan2_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/atan2_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "atan2_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/atan2_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "atan_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/atan_out.py",
+    "reason": ""
+  },
+  {
+    "op": "avg_pool1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/avg_pool1d.py",
+    "reason": ""
+  },
+  {
+    "op": "avg_pool2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/avg_pool2d.py",
+    "reason": ""
+  },
+  {
+    "op": "avg_pool3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/avg_pool3d.py",
+    "reason": ""
+  },
+  {
+    "op": "baddbmm",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/baddbmm.py",
+    "reason": ""
+  },
+  {
+    "op": "batch_norm",
+    "status": "done",
+    "category": "normalization",
+    "file": "kernels/normalization/batch_norm.py",
+    "reason": ""
+  },
+  {
+    "op": "bilinear",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bilinear.py",
+    "reason": ""
+  },
+  {
+    "op": "binary_cross_entropy",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/binary_cross_entropy.py",
+    "reason": ""
+  },
+  {
+    "op": "binary_cross_entropy_with_logits",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/binary_cross_entropy_with_logits.py",
+    "reason": ""
+  },
+  {
     "op": "bitwise_and",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/bitwise_and.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_and_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_and_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_and_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_and_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_and_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_and_scalar_out.py",
     "reason": ""
   },
   {
@@ -560,6 +965,27 @@
     "reason": ""
   },
   {
+    "op": "bitwise_left_shift_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_left_shift_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_left_shift_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_left_shift_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_left_shift_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_left_shift_scalar_out.py",
+    "reason": ""
+  },
+  {
     "op": "bitwise_not",
     "status": "done",
     "category": "pointwise",
@@ -574,10 +1000,38 @@
     "reason": ""
   },
   {
+    "op": "bitwise_not_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_not_out.py",
+    "reason": ""
+  },
+  {
     "op": "bitwise_or",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/bitwise_or.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_or_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_or_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_or_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_or_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_or_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_or_scalar_out.py",
     "reason": ""
   },
   {
@@ -600,6 +1054,183 @@
     "category": "pointwise",
     "file": "kernels/pointwise/bitwise_right_shift.py",
     "reason": ""
+  },
+  {
+    "op": "bitwise_right_shift_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_right_shift_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_right_shift_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_right_shift_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_right_shift_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_right_shift_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_xor",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_xor.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_xor_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_xor_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_xor_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_xor_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "bitwise_xor_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/bitwise_xor_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_abs",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_abs.py"
+  },
+  {
+    "op": "bmm_cube",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_cube.py"
+  },
+  {
+    "op": "bmm_elu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_elu.py"
+  },
+  {
+    "op": "bmm_gelu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_hardshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_hardshrink.py"
+  },
+  {
+    "op": "bmm_hardsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_hardsigmoid.py"
+  },
+  {
+    "op": "bmm_hardtanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_hardtanh.py"
+  },
+  {
+    "op": "bmm_leaky_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_logsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_logsigmoid.py"
+  },
+  {
+    "op": "bmm_neg",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_neg.py"
+  },
+  {
+    "op": "bmm_out",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_out.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_relu6",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_relu6.py"
+  },
+  {
+    "op": "bmm_sigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_silu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_softshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_softshrink.py"
+  },
+  {
+    "op": "bmm_square",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_square.py"
+  },
+  {
+    "op": "bmm_tanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "bmm_tanhshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/bmm_tanhshrink.py"
   },
   {
     "op": "ceil",
@@ -634,6 +1265,48 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/celu_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "center_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/center_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "center_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/center_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "center_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/center_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "center_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/center_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "chain_matmul",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/chain_matmul.py",
+    "reason": ""
+  },
+  {
+    "op": "channel_shuffle",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/channel_shuffle.py",
     "reason": ""
   },
   {
@@ -693,10 +1366,115 @@
     "reason": ""
   },
   {
+    "op": "contiguous",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/contiguous.py",
+    "reason": ""
+  },
+  {
+    "op": "conv1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv1d.py",
+    "reason": ""
+  },
+  {
+    "op": "conv2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv2d.py",
+    "reason": ""
+  },
+  {
+    "op": "conv3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv3d.py",
+    "reason": ""
+  },
+  {
+    "op": "conv_depthwise2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv_depthwise2d.py",
+    "reason": ""
+  },
+  {
+    "op": "conv_tbc",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv_tbc.py",
+    "reason": ""
+  },
+  {
+    "op": "conv_transpose1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv_transpose1d.py",
+    "reason": ""
+  },
+  {
+    "op": "conv_transpose2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv_transpose2d.py",
+    "reason": ""
+  },
+  {
+    "op": "conv_transpose3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/conv_transpose3d.py",
+    "reason": ""
+  },
+  {
+    "op": "copy",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/copy.py",
+    "reason": ""
+  },
+  {
     "op": "copysign",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/copysign.py",
+    "reason": ""
+  },
+  {
+    "op": "copysign_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/copysign_out.py",
+    "reason": ""
+  },
+  {
+    "op": "copysign_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/copysign_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "copysign_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/copysign_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "copysign_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/copysign_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "copysign_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/copysign_scalar_out.py",
     "reason": ""
   },
   {
@@ -711,6 +1489,13 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/cos_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "cos_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/cos_out.py",
     "reason": ""
   },
   {
@@ -735,6 +1520,55 @@
     "reason": ""
   },
   {
+    "op": "cosine_embedding_loss",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/cosine_embedding_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "cosine_similarity",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/cosine_similarity.py",
+    "reason": ""
+  },
+  {
+    "op": "cross_entropy",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/cross_entropy.py",
+    "reason": ""
+  },
+  {
+    "op": "cudnn_convolution",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/cudnn_convolution.py",
+    "reason": ""
+  },
+  {
+    "op": "cumsum",
+    "status": "done",
+    "category": "fused/fla",
+    "file": "kernels/fused/fla/cumsum.py",
+    "reason": ""
+  },
+  {
+    "op": "deg2rad",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/deg2rad.py",
+    "reason": ""
+  },
+  {
+    "op": "deg2rad_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/deg2rad_out.py",
+    "reason": ""
+  },
+  {
     "op": "div",
     "status": "done",
     "category": "pointwise",
@@ -756,6 +1590,76 @@
     "reason": ""
   },
   {
+    "op": "div_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/div_out.py",
+    "reason": ""
+  },
+  {
+    "op": "div_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/div_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "div_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/div_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "div_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/div_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "div_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/div_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "dot",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/dot.py",
+    "reason": ""
+  },
+  {
+    "op": "dropout",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/dropout.py",
+    "reason": ""
+  },
+  {
+    "op": "dropout1d",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/dropout1d.py",
+    "reason": ""
+  },
+  {
+    "op": "dropout2d",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/dropout2d.py",
+    "reason": ""
+  },
+  {
+    "op": "dropout3d",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/dropout3d.py",
+    "reason": ""
+  },
+  {
     "op": "elu",
     "status": "done",
     "category": "pointwise",
@@ -770,10 +1674,59 @@
     "reason": ""
   },
   {
+    "op": "embedding",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/embedding.py",
+    "reason": ""
+  },
+  {
+    "op": "embedding_bag",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/embedding_bag.py",
+    "reason": ""
+  },
+  {
     "op": "eq",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/eq.py",
+    "reason": ""
+  },
+  {
+    "op": "eq_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/eq_out.py",
+    "reason": ""
+  },
+  {
+    "op": "eq_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/eq_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "eq_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/eq_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "eq_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/eq_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "eq_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/eq_scalar_out.py",
     "reason": ""
   },
   {
@@ -788,6 +1741,13 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/erf_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "erf_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/erf_out.py",
     "reason": ""
   },
   {
@@ -809,6 +1769,13 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/exp2_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "exp2_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/exp2_out.py",
     "reason": ""
   },
   {
@@ -847,10 +1814,157 @@
     "reason": ""
   },
   {
+    "op": "eye",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/eye.py",
+    "reason": ""
+  },
+  {
+    "op": "eye_m",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/eye_m.py",
+    "reason": ""
+  },
+  {
+    "op": "feature_alpha_dropout",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/feature_alpha_dropout.py",
+    "reason": ""
+  },
+  {
     "op": "fill",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/fill.py",
+    "reason": ""
+  },
+  {
+    "op": "fix",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fix.py",
+    "reason": ""
+  },
+  {
+    "op": "fix_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fix_out.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention_causal",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention_causal.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention_kvpacked",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention_kvpacked.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention_kvpacked_causal",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention_kvpacked_causal.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention_qkvpacked",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention_qkvpacked.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention_qkvpacked_causal",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention_qkvpacked_causal.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention_scaled",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention_scaled.py",
+    "reason": ""
+  },
+  {
+    "op": "flash_attention_scaled_causal",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/flash_attention_scaled_causal.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_3d.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_4d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_4d.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_dim1_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_dim1_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_dim1_3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_dim1_3d.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_dim1_4d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_dim1_4d.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_dim2_3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_dim2_3d.py",
+    "reason": ""
+  },
+  {
+    "op": "flatten_dim2_4d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/flatten_dim2_4d.py",
     "reason": ""
   },
   {
@@ -882,6 +1996,27 @@
     "reason": ""
   },
   {
+    "op": "floor_divide_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/floor_divide_out.py",
+    "reason": ""
+  },
+  {
+    "op": "floor_divide_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/floor_divide_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "floor_divide_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/floor_divide_scalar_out.py",
+    "reason": ""
+  },
+  {
     "op": "floor_out",
     "status": "done",
     "category": "pointwise",
@@ -896,6 +2031,27 @@
     "reason": ""
   },
   {
+    "op": "fmin_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fmin_out.py",
+    "reason": ""
+  },
+  {
+    "op": "fmin_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fmin_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "fmin_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fmin_scalar_out.py",
+    "reason": ""
+  },
+  {
     "op": "fmod",
     "status": "done",
     "category": "pointwise",
@@ -903,10 +2059,1129 @@
     "reason": ""
   },
   {
+    "op": "fmod_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fmod_out.py",
+    "reason": ""
+  },
+  {
+    "op": "fmod_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fmod_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "fmod_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/fmod_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "fold",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/fold.py",
+    "reason": ""
+  },
+  {
+    "op": "frac",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/frac.py",
+    "reason": ""
+  },
+  {
+    "op": "frac_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/frac_out.py",
+    "reason": ""
+  },
+  {
+    "op": "fractional_max_pool2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/fractional_max_pool2d.py",
+    "reason": ""
+  },
+  {
+    "op": "full",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/full.py",
+    "reason": ""
+  },
+  {
+    "op": "full_like",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/full_like.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_celu",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_celu.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_celu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_celu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_elu",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_elu.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_elu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_elu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_gelu",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_gelu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_gelu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardshrink",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardshrink_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardshrink_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardsigmoid",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardsigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardsigmoid_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardsigmoid_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardswish",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardswish_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardswish_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardtanh",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardtanh.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_hardtanh_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_hardtanh_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_leaky_relu",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_leaky_relu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_leaky_relu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_logsigmoid",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_logsigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_logsigmoid_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_logsigmoid_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_mish",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_mish.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_mish_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_mish_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_relu",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_relu6",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_relu6.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_relu6_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_relu6_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_relu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_relu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_sigmoid",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_sigmoid_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_sigmoid_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_silu",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_silu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_silu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_softplus",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_softplus_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_softplus_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_softshrink",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_softshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_softshrink_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_softshrink_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_softsign",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_softsign_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_softsign_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_tanhshrink",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_tanhshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_tanhshrink_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_tanhshrink_out.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_threshold",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_threshold.py",
+    "reason": ""
+  },
+  {
+    "op": "functional_threshold_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/functional_threshold_out.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_add_rms_norm",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_add_rms_norm.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_abs.py"
+  },
+  {
+    "op": "fused_addmm_bias_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_cube.py"
+  },
+  {
+    "op": "fused_addmm_bias_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_elu.py"
+  },
+  {
+    "op": "fused_addmm_bias_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_hardshrink.py"
+  },
+  {
+    "op": "fused_addmm_bias_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_hardsigmoid.py"
+  },
+  {
+    "op": "fused_addmm_bias_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_hardtanh.py"
+  },
+  {
+    "op": "fused_addmm_bias_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_logsigmoid.py"
+  },
+  {
+    "op": "fused_addmm_bias_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_neg.py"
+  },
+  {
+    "op": "fused_addmm_bias_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_relu6.py"
+  },
+  {
+    "op": "fused_addmm_bias_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_softshrink.py"
+  },
+  {
+    "op": "fused_addmm_bias_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_square.py"
+  },
+  {
+    "op": "fused_addmm_bias_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_addmm_bias_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_addmm_bias_tanhshrink.py"
+  },
+  {
+    "op": "fused_gemm_bias_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_abs.py"
+  },
+  {
+    "op": "fused_gemm_bias_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_cube.py"
+  },
+  {
+    "op": "fused_gemm_bias_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_elu.py"
+  },
+  {
+    "op": "fused_gemm_bias_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_hardshrink.py"
+  },
+  {
+    "op": "fused_gemm_bias_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_hardsigmoid.py"
+  },
+  {
+    "op": "fused_gemm_bias_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_hardtanh.py"
+  },
+  {
+    "op": "fused_gemm_bias_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_logsigmoid.py"
+  },
+  {
+    "op": "fused_gemm_bias_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_neg.py"
+  },
+  {
+    "op": "fused_gemm_bias_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_relu6.py"
+  },
+  {
+    "op": "fused_gemm_bias_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_softshrink.py"
+  },
+  {
+    "op": "fused_gemm_bias_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_square.py"
+  },
+  {
+    "op": "fused_gemm_bias_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "fused_gemm_bias_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/fused_gemm_bias_tanhshrink.py"
+  },
+  {
+    "op": "gate_abs_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_abs_add_mul.py"
+  },
+  {
+    "op": "gate_abs_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_abs_mul.py"
+  },
+  {
+    "op": "gate_abs_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_abs_mul_add.py"
+  },
+  {
+    "op": "gate_clamp_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_clamp_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_clamp_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_clamp_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_clamp_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_clamp_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_cube_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_cube_add_mul.py"
+  },
+  {
+    "op": "gate_cube_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_cube_mul.py"
+  },
+  {
+    "op": "gate_cube_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_cube_mul_add.py"
+  },
+  {
+    "op": "gate_elu_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_elu_add_mul.py"
+  },
+  {
+    "op": "gate_elu_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_elu_mul.py"
+  },
+  {
+    "op": "gate_elu_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_elu_mul_add.py"
+  },
+  {
+    "op": "gate_gelu_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_gelu_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_gelu_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_gelu_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_gelu_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_gelu_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_hardshrink_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardshrink_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_hardshrink_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardshrink_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_hardshrink_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardshrink_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_hardsigmoid_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardsigmoid_add_mul.py"
+  },
+  {
+    "op": "gate_hardsigmoid_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardsigmoid_mul.py"
+  },
+  {
+    "op": "gate_hardsigmoid_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardsigmoid_mul_add.py"
+  },
+  {
+    "op": "gate_hardswish_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardswish_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_hardswish_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardswish_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_hardswish_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardswish_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_hardtanh_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardtanh_add_mul.py"
+  },
+  {
+    "op": "gate_hardtanh_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardtanh_mul.py"
+  },
+  {
+    "op": "gate_hardtanh_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_hardtanh_mul_add.py"
+  },
+  {
+    "op": "gate_leaky_relu_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_leaky_relu_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_leaky_relu_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_leaky_relu_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_leaky_relu_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_leaky_relu_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_logsigmoid_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_logsigmoid_add_mul.py"
+  },
+  {
+    "op": "gate_logsigmoid_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_logsigmoid_mul.py"
+  },
+  {
+    "op": "gate_logsigmoid_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_logsigmoid_mul_add.py"
+  },
+  {
+    "op": "gate_mish_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_mish_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_mish_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_mish_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_mish_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_mish_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_neg_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_neg_add_mul.py"
+  },
+  {
+    "op": "gate_neg_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_neg_mul.py"
+  },
+  {
+    "op": "gate_neg_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_neg_mul_add.py"
+  },
+  {
+    "op": "gate_relu6_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_relu6_add_mul.py"
+  },
+  {
+    "op": "gate_relu6_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_relu6_mul.py"
+  },
+  {
+    "op": "gate_relu6_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_relu6_mul_add.py"
+  },
+  {
+    "op": "gate_relu_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_relu_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_relu_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_relu_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_relu_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_relu_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_sigmoid_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_sigmoid_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_sigmoid_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_sigmoid_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_sigmoid_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_sigmoid_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_silu_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_silu_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_silu_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_silu_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_silu_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_silu_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_softplus_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softplus_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_softplus_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softplus_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_softplus_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softplus_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_softshrink_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softshrink_add_mul.py"
+  },
+  {
+    "op": "gate_softshrink_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softshrink_mul.py"
+  },
+  {
+    "op": "gate_softshrink_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softshrink_mul_add.py"
+  },
+  {
+    "op": "gate_softsign_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softsign_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_softsign_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softsign_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_softsign_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_softsign_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_square_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_square_add_mul.py"
+  },
+  {
+    "op": "gate_square_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_square_mul.py"
+  },
+  {
+    "op": "gate_square_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_square_mul_add.py"
+  },
+  {
+    "op": "gate_tanh_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_tanh_add_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_tanh_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_tanh_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_tanh_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_tanh_mul_add.py",
+    "reason": ""
+  },
+  {
+    "op": "gate_tanhshrink_add_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_tanhshrink_add_mul.py"
+  },
+  {
+    "op": "gate_tanhshrink_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_tanhshrink_mul.py"
+  },
+  {
+    "op": "gate_tanhshrink_mul_add",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gate_tanhshrink_mul_add.py"
+  },
+  {
+    "op": "gaussian_nll_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gaussian_nll_loss.py",
+    "reason": ""
+  },
+  {
     "op": "ge",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/ge.py",
+    "reason": ""
+  },
+  {
+    "op": "ge_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ge_out.py",
+    "reason": ""
+  },
+  {
+    "op": "ge_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ge_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "ge_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ge_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "ge_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ge_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "ge_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ge_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "geglu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/geglu.py",
     "reason": ""
   },
   {
@@ -924,10 +3199,265 @@
     "reason": ""
   },
   {
+    "op": "gelu_and_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/gelu_and_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "gelu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/gelu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_abs",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_abs.py"
+  },
+  {
+    "op": "gemm_bias_clamp",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_cube",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_cube.py"
+  },
+  {
+    "op": "gemm_bias_elu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_elu.py"
+  },
+  {
+    "op": "gemm_bias_gelu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_hardshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_hardshrink.py"
+  },
+  {
+    "op": "gemm_bias_hardsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_hardsigmoid.py"
+  },
+  {
+    "op": "gemm_bias_hardswish",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_hardtanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_hardtanh.py"
+  },
+  {
+    "op": "gemm_bias_leaky_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_logsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_logsigmoid.py"
+  },
+  {
+    "op": "gemm_bias_neg",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_neg.py"
+  },
+  {
+    "op": "gemm_bias_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_relu6",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_relu6.py"
+  },
+  {
+    "op": "gemm_bias_sigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_silu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_softplus",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_softshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_softshrink.py"
+  },
+  {
+    "op": "gemm_bias_square",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_square.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_tanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "gemm_bias_tanhshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/gemm_bias_tanhshrink.py"
+  },
+  {
+    "op": "glu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/glu.py",
+    "reason": ""
+  },
+  {
     "op": "greater",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/greater.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_equal",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_equal.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_equal_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_equal_out.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_equal_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_equal_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_equal_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_equal_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_equal_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_equal_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_equal_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_equal_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_out.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "greater_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/greater_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "group_norm",
+    "status": "done",
+    "category": "normalization",
+    "file": "kernels/normalization/group_norm.py",
+    "reason": ""
+  },
+  {
+    "op": "grouped_mm",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/grouped_mm.py",
     "reason": ""
   },
   {
@@ -938,10 +3468,80 @@
     "reason": ""
   },
   {
+    "op": "gt_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/gt_out.py",
+    "reason": ""
+  },
+  {
+    "op": "gt_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/gt_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "gt_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/gt_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "gt_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/gt_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "gt_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/gt_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "gumbel_softmax",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/gumbel_softmax.py",
+    "reason": ""
+  },
+  {
+    "op": "hardshrink",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "hardshrink_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardshrink_out.py",
+    "reason": ""
+  },
+  {
     "op": "hardsigmoid",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/hardsigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "hardsigmoid_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardsigmoid_out.py",
+    "reason": ""
+  },
+  {
+    "op": "hardswish",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardswish.py",
     "reason": ""
   },
   {
@@ -952,10 +3552,108 @@
     "reason": ""
   },
   {
+    "op": "hardswish_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardswish_out.py",
+    "reason": ""
+  },
+  {
+    "op": "hardtanh",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardtanh.py",
+    "reason": ""
+  },
+  {
+    "op": "hardtanh_",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardtanh_.py",
+    "reason": ""
+  },
+  {
+    "op": "hardtanh_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hardtanh_out.py",
+    "reason": ""
+  },
+  {
+    "op": "hinge_embedding_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/hinge_embedding_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "huber_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/huber_loss.py",
+    "reason": ""
+  },
+  {
     "op": "hypot",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/hypot.py",
+    "reason": ""
+  },
+  {
+    "op": "hypot_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hypot_out.py",
+    "reason": ""
+  },
+  {
+    "op": "hypot_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hypot_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "hypot_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hypot_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "hypot_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hypot_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "hypot_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/hypot_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "inner",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/inner.py",
+    "reason": ""
+  },
+  {
+    "op": "instance_norm",
+    "status": "done",
+    "category": "normalization",
+    "file": "kernels/normalization/instance_norm.py",
+    "reason": ""
+  },
+  {
+    "op": "interpolate",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/interpolate.py",
     "reason": ""
   },
   {
@@ -994,10 +3692,312 @@
     "reason": ""
   },
   {
+    "op": "kl_div",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/kl_div.py",
+    "reason": ""
+  },
+  {
+    "op": "l1_l2_ratio_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_l2_ratio_width16.py"
+  },
+  {
+    "op": "l1_l2_ratio_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_l2_ratio_width32.py"
+  },
+  {
+    "op": "l1_l2_ratio_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_l2_ratio_width64.py"
+  },
+  {
+    "op": "l1_l2_ratio_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_l2_ratio_width8.py"
+  },
+  {
+    "op": "l1_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/l1_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "l1_norm_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_norm_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "l1_norm_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_norm_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "l1_norm_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_norm_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "l1_norm_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l1_norm_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "l2_norm_eps_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_eps_width16.py"
+  },
+  {
+    "op": "l2_norm_eps_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_eps_width32.py"
+  },
+  {
+    "op": "l2_norm_eps_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_eps_width64.py"
+  },
+  {
+    "op": "l2_norm_eps_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_eps_width8.py"
+  },
+  {
+    "op": "l2_norm_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "l2_norm_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "l2_norm_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "l2_norm_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/l2_norm_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm",
+    "status": "done",
+    "category": "normalization",
+    "file": "kernels/normalization/layer_norm.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_abs.py"
+  },
+  {
+    "op": "layer_norm_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_cube.py"
+  },
+  {
+    "op": "layer_norm_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_elu.py"
+  },
+  {
+    "op": "layer_norm_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_hardshrink.py"
+  },
+  {
+    "op": "layer_norm_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_hardsigmoid.py"
+  },
+  {
+    "op": "layer_norm_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_hardtanh.py"
+  },
+  {
+    "op": "layer_norm_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_logsigmoid.py"
+  },
+  {
+    "op": "layer_norm_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_neg.py"
+  },
+  {
+    "op": "layer_norm_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_relu6.py"
+  },
+  {
+    "op": "layer_norm_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_softshrink.py"
+  },
+  {
+    "op": "layer_norm_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_square.py"
+  },
+  {
+    "op": "layer_norm_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "layer_norm_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/layer_norm_tanhshrink.py"
+  },
+  {
     "op": "le",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/le.py",
+    "reason": ""
+  },
+  {
+    "op": "le_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/le_out.py",
+    "reason": ""
+  },
+  {
+    "op": "le_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/le_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "le_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/le_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "le_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/le_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "le_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/le_scalar_out.py",
     "reason": ""
   },
   {
@@ -1026,6 +4026,111 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/lerp.py",
+    "reason": ""
+  },
+  {
+    "op": "lerp_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/lerp_out.py",
+    "reason": ""
+  },
+  {
+    "op": "less",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less.py",
+    "reason": ""
+  },
+  {
+    "op": "less_equal",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_equal.py",
+    "reason": ""
+  },
+  {
+    "op": "less_equal_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_equal_out.py",
+    "reason": ""
+  },
+  {
+    "op": "less_equal_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_equal_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "less_equal_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_equal_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "less_equal_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_equal_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "less_equal_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_equal_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "less_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_out.py",
+    "reason": ""
+  },
+  {
+    "op": "less_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "less_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "less_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "less_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/less_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "linear",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/linear.py",
+    "reason": ""
+  },
+  {
+    "op": "local_response_norm",
+    "status": "done",
+    "category": "normalization",
+    "file": "kernels/normalization/local_response_norm.py",
     "reason": ""
   },
   {
@@ -1071,10 +4176,97 @@
     "reason": ""
   },
   {
-    "op": "log_sigmoid",
+    "op": "log1p_out",
     "status": "done",
     "category": "pointwise",
-    "file": "kernels/pointwise/log_sigmoid.py",
+    "file": "kernels/pointwise/log1p_out.py",
+    "reason": ""
+  },
+  {
+    "op": "log2",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/log2.py",
+    "reason": ""
+  },
+  {
+    "op": "log2_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/log2_out.py",
+    "reason": ""
+  },
+  {
+    "op": "log_mean_exp_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_mean_exp_width16.py"
+  },
+  {
+    "op": "log_mean_exp_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_mean_exp_width32.py"
+  },
+  {
+    "op": "log_mean_exp_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_mean_exp_width64.py"
+  },
+  {
+    "op": "log_mean_exp_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_mean_exp_width8.py"
+  },
+  {
+    "op": "log_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/log_out.py",
+    "reason": ""
+  },
+  {
+    "op": "log_sigmoid_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/log_sigmoid_out.py",
+    "reason": ""
+  },
+  {
+    "op": "log_softmax",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_softmax.py",
+    "reason": ""
+  },
+  {
+    "op": "log_softmax_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_softmax_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "log_softmax_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_softmax_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "log_softmax_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_softmax_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "log_softmax_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/log_softmax_width8.py",
     "reason": ""
   },
   {
@@ -1082,6 +4274,41 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/logaddexp.py",
+    "reason": ""
+  },
+  {
+    "op": "logaddexp_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logaddexp_out.py",
+    "reason": ""
+  },
+  {
+    "op": "logaddexp_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logaddexp_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "logaddexp_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logaddexp_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "logaddexp_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logaddexp_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "logaddexp_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logaddexp_scalar_out.py",
     "reason": ""
   },
   {
@@ -1099,10 +4326,38 @@
     "reason": ""
   },
   {
+    "op": "logical_and_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_and_out.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_and_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_and_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_and_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_and_scalar_out.py",
+    "reason": ""
+  },
+  {
     "op": "logical_not",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/logical_not.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_not_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_not_out.py",
     "reason": ""
   },
   {
@@ -1120,10 +4375,52 @@
     "reason": ""
   },
   {
+    "op": "logical_or_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_or_out.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_or_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_or_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_or_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_or_scalar_out.py",
+    "reason": ""
+  },
+  {
     "op": "logical_xor",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/logical_xor.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_xor_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_xor_out.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_xor_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_xor_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "logical_xor_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logical_xor_scalar_out.py",
     "reason": ""
   },
   {
@@ -1141,10 +4438,230 @@
     "reason": ""
   },
   {
+    "op": "logit_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logit_out.py",
+    "reason": ""
+  },
+  {
+    "op": "logsigmoid",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/logsigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "logsumexp",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/logsumexp.py",
+    "reason": ""
+  },
+  {
+    "op": "logsumexp_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/logsumexp_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "logsumexp_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/logsumexp_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "logsumexp_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/logsumexp_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "logsumexp_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/logsumexp_width8.py",
+    "reason": ""
+  },
+  {
     "op": "lt",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/lt.py",
+    "reason": ""
+  },
+  {
+    "op": "lt_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/lt_out.py",
+    "reason": ""
+  },
+  {
+    "op": "lt_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/lt_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "lt_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/lt_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "lt_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/lt_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "lt_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/lt_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "margin_ranking_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/margin_ranking_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "max",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max.py",
+    "reason": ""
+  },
+  {
+    "op": "max_abs_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_abs_width16.py"
+  },
+  {
+    "op": "max_abs_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_abs_width32.py"
+  },
+  {
+    "op": "max_abs_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_abs_width64.py"
+  },
+  {
+    "op": "max_abs_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_abs_width8.py"
+  },
+  {
+    "op": "max_dim",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_dim.py",
+    "reason": ""
+  },
+  {
+    "op": "max_keepdim_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_keepdim_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "max_keepdim_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_keepdim_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "max_keepdim_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_keepdim_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "max_keepdim_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_keepdim_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "max_pool1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/max_pool1d.py",
+    "reason": ""
+  },
+  {
+    "op": "max_pool2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/max_pool2d.py",
+    "reason": ""
+  },
+  {
+    "op": "max_unpool1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/max_unpool1d.py",
+    "reason": ""
+  },
+  {
+    "op": "max_unpool2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/max_unpool2d.py",
+    "reason": ""
+  },
+  {
+    "op": "max_unpool3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/max_unpool3d.py",
+    "reason": ""
+  },
+  {
+    "op": "max_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "max_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "max_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "max_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/max_width8.py",
     "reason": ""
   },
   {
@@ -1155,10 +4672,498 @@
     "reason": ""
   },
   {
+    "op": "maximum_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/maximum_out.py",
+    "reason": ""
+  },
+  {
+    "op": "maximum_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/maximum_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "maximum_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/maximum_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "maximum_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/maximum_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "maximum_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/maximum_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "mean",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_abs_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_abs_width16.py"
+  },
+  {
+    "op": "mean_abs_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_abs_width32.py"
+  },
+  {
+    "op": "mean_abs_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_abs_width64.py"
+  },
+  {
+    "op": "mean_abs_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_abs_width8.py"
+  },
+  {
+    "op": "mean_dim",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_dim.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_dim_comm",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_dim_comm.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_keepdim_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_keepdim_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_keepdim_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_keepdim_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_keepdim_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_keepdim_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_keepdim_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_keepdim_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_relu_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_relu_width16.py"
+  },
+  {
+    "op": "mean_relu_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_relu_width32.py"
+  },
+  {
+    "op": "mean_relu_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_relu_width64.py"
+  },
+  {
+    "op": "mean_relu_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_relu_width8.py"
+  },
+  {
+    "op": "mean_sigmoid_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_sigmoid_width16.py"
+  },
+  {
+    "op": "mean_sigmoid_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_sigmoid_width32.py"
+  },
+  {
+    "op": "mean_sigmoid_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_sigmoid_width64.py"
+  },
+  {
+    "op": "mean_sigmoid_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_sigmoid_width8.py"
+  },
+  {
+    "op": "mean_square_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_square_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_square_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_square_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_square_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_square_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_square_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_square_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "mean_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/mean_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "min",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min.py",
+    "reason": ""
+  },
+  {
+    "op": "min_dim",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_dim.py",
+    "reason": ""
+  },
+  {
+    "op": "min_keepdim_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_keepdim_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "min_keepdim_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_keepdim_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "min_keepdim_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_keepdim_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "min_keepdim_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_keepdim_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "min_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "min_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "min_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "min_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/min_width8.py",
+    "reason": ""
+  },
+  {
     "op": "minimum",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/minimum.py",
+    "reason": ""
+  },
+  {
+    "op": "minimum_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/minimum_out.py",
+    "reason": ""
+  },
+  {
+    "op": "minimum_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/minimum_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "minimum_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/minimum_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "minimum_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/minimum_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "minimum_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/minimum_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "mish",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/mish.py",
+    "reason": ""
+  },
+  {
+    "op": "mish_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/mish_out.py",
+    "reason": ""
+  },
+  {
+    "op": "mm",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_abs",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_abs.py"
+  },
+  {
+    "op": "mm_clamp",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_cube",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_cube.py"
+  },
+  {
+    "op": "mm_elu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_elu.py"
+  },
+  {
+    "op": "mm_gelu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_hardshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_hardshrink.py"
+  },
+  {
+    "op": "mm_hardsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_hardsigmoid.py"
+  },
+  {
+    "op": "mm_hardswish",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_hardtanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_hardtanh.py"
+  },
+  {
+    "op": "mm_leaky_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_logsigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_logsigmoid.py"
+  },
+  {
+    "op": "mm_neg",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_neg.py"
+  },
+  {
+    "op": "mm_out",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_out.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_relu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_relu6",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_relu6.py"
+  },
+  {
+    "op": "mm_sigmoid",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_silu",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_softplus",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_softshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_softshrink.py"
+  },
+  {
+    "op": "mm_square",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_square.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_tanh",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "mm_tanhshrink",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mm_tanhshrink.py"
+  },
+  {
+    "op": "mse_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/mse_loss.py",
     "reason": ""
   },
   {
@@ -1176,6 +5181,76 @@
     "reason": ""
   },
   {
+    "op": "mul_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/mul_out.py",
+    "reason": ""
+  },
+  {
+    "op": "mul_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/mul_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "mul_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/mul_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "mul_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/mul_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "mul_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/mul_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "multi_head_attention_forward",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/multi_head_attention_forward.py",
+    "reason": ""
+  },
+  {
+    "op": "multi_margin_loss",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/multi_margin_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "multilabel_margin_loss",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/multilabel_margin_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "multilabel_soft_margin_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/multilabel_soft_margin_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "mv",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/mv.py",
+    "reason": ""
+  },
+  {
     "op": "nan_to_num",
     "status": "done",
     "category": "pointwise",
@@ -1183,10 +5258,59 @@
     "reason": ""
   },
   {
+    "op": "nan_to_num_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/nan_to_num_out.py",
+    "reason": ""
+  },
+  {
+    "op": "native_channel_shuffle",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/native_channel_shuffle.py",
+    "reason": ""
+  },
+  {
     "op": "ne",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/ne.py",
+    "reason": ""
+  },
+  {
+    "op": "ne_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ne_out.py",
+    "reason": ""
+  },
+  {
+    "op": "ne_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ne_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "ne_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ne_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "ne_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ne_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "ne_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/ne_scalar_out.py",
     "reason": ""
   },
   {
@@ -1204,10 +5328,416 @@
     "reason": ""
   },
   {
+    "op": "neg_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/neg_out.py",
+    "reason": ""
+  },
+  {
+    "op": "negative",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/negative.py",
+    "reason": ""
+  },
+  {
+    "op": "negative_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/negative_out.py",
+    "reason": ""
+  },
+  {
+    "op": "new_full",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/new_full.py",
+    "reason": ""
+  },
+  {
+    "op": "nll_loss",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/nll_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_l2_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_l2_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_l2_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_l2_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_l2_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_l2_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_l2_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_l2_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_rms_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_rms_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_rms_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_rms_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_rms_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_rms_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "normalize_rms_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/normalize_rms_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "not_equal",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/not_equal.py",
+    "reason": ""
+  },
+  {
+    "op": "not_equal_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/not_equal_out.py",
+    "reason": ""
+  },
+  {
+    "op": "not_equal_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/not_equal_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "not_equal_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/not_equal_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "not_equal_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/not_equal_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "not_equal_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/not_equal_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "one_hot",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/one_hot.py",
+    "reason": ""
+  },
+  {
+    "op": "ones",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/ones.py",
+    "reason": ""
+  },
+  {
+    "op": "ones_like",
+    "status": "done",
+    "category": "creation",
+    "file": "kernels/creation/ones_like.py",
+    "reason": ""
+  },
+  {
+    "op": "outer",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/outer.py",
+    "reason": ""
+  },
+  {
+    "op": "pad",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad.py",
+    "reason": ""
+  },
+  {
+    "op": "pad1d_left",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad1d_left.py",
+    "reason": ""
+  },
+  {
+    "op": "pad1d_left_right",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad1d_left_right.py",
+    "reason": ""
+  },
+  {
+    "op": "pad2d_border",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad2d_border.py",
+    "reason": ""
+  },
+  {
+    "op": "pad2d_cols",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad2d_cols.py",
+    "reason": ""
+  },
+  {
+    "op": "pad2d_rows",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad2d_rows.py",
+    "reason": ""
+  },
+  {
+    "op": "pad3d_last",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad3d_last.py",
+    "reason": ""
+  },
+  {
+    "op": "pad3d_middle",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad3d_middle.py",
+    "reason": ""
+  },
+  {
+    "op": "pad3d_outer",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pad3d_outer.py",
+    "reason": ""
+  },
+  {
+    "op": "pairwise_distance",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/pairwise_distance.py",
+    "reason": ""
+  },
+  {
+    "op": "pdist",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/pdist.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_3d_021",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_3d_021.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_3d_102",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_3d_102.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_3d_120",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_3d_120.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_3d_201",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_3d_201.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_3d_210",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_3d_210.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_0231",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_0231.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_0312",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_0312.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_1032",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_1032.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_1302",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_1302.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_2013",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_2013.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_2301",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_2301.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_3012",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_3012.py",
+    "reason": ""
+  },
+  {
+    "op": "permute_4d_3210",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/permute_4d_3210.py",
+    "reason": ""
+  },
+  {
+    "op": "pixel_shuffle",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pixel_shuffle.py",
+    "reason": ""
+  },
+  {
+    "op": "pixel_unshuffle",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/pixel_unshuffle.py",
+    "reason": ""
+  },
+  {
+    "op": "poisson_nll_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/poisson_nll_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "positive",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/positive.py",
+    "reason": ""
+  },
+  {
+    "op": "positive_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/positive_out.py",
+    "reason": ""
+  },
+  {
     "op": "pow",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/pow.py",
+    "reason": ""
+  },
+  {
+    "op": "pow_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/pow_out.py",
+    "reason": ""
+  },
+  {
+    "op": "pow_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/pow_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "pow_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/pow_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "pow_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/pow_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "pow_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/pow_scalar_out.py",
     "reason": ""
   },
   {
@@ -1225,6 +5755,41 @@
     "reason": ""
   },
   {
+    "op": "rad2deg_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/rad2deg_out.py",
+    "reason": ""
+  },
+  {
+    "op": "range_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/range_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "range_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/range_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "range_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/range_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "range_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/range_width8.py",
+    "reason": ""
+  },
+  {
     "op": "reciprocal",
     "status": "done",
     "category": "pointwise",
@@ -1236,6 +5801,20 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/reciprocal_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "reciprocal_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/reciprocal_out.py",
+    "reason": ""
+  },
+  {
+    "op": "reglu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/reglu.py",
     "reason": ""
   },
   {
@@ -1253,10 +5832,24 @@
     "reason": ""
   },
   {
+    "op": "relu6_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/relu6_out.py",
+    "reason": ""
+  },
+  {
     "op": "relu_",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/relu_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "relu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/relu_out.py",
     "reason": ""
   },
   {
@@ -1274,6 +5867,334 @@
     "reason": ""
   },
   {
+    "op": "remainder_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/remainder_out.py",
+    "reason": ""
+  },
+  {
+    "op": "remainder_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/remainder_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "remainder_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/remainder_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_abs.py"
+  },
+  {
+    "op": "residual_bias_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_abs.py"
+  },
+  {
+    "op": "residual_bias_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_cube.py"
+  },
+  {
+    "op": "residual_bias_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_elu.py"
+  },
+  {
+    "op": "residual_bias_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_hardshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_hardsigmoid.py"
+  },
+  {
+    "op": "residual_bias_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_hardtanh.py"
+  },
+  {
+    "op": "residual_bias_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_logsigmoid.py"
+  },
+  {
+    "op": "residual_bias_mish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_mish.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_neg.py"
+  },
+  {
+    "op": "residual_bias_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_relu6.py"
+  },
+  {
+    "op": "residual_bias_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_softshrink.py"
+  },
+  {
+    "op": "residual_bias_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_square.py"
+  },
+  {
+    "op": "residual_bias_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_bias_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_bias_tanhshrink.py"
+  },
+  {
+    "op": "residual_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_cube.py"
+  },
+  {
+    "op": "residual_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_elu.py"
+  },
+  {
+    "op": "residual_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_hardshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_hardsigmoid.py"
+  },
+  {
+    "op": "residual_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_hardtanh.py"
+  },
+  {
+    "op": "residual_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_logsigmoid.py"
+  },
+  {
+    "op": "residual_mish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_mish.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_neg.py"
+  },
+  {
+    "op": "residual_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_relu6.py"
+  },
+  {
+    "op": "residual_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_softshrink.py"
+  },
+  {
+    "op": "residual_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_square.py"
+  },
+  {
+    "op": "residual_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "residual_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/residual_tanhshrink.py"
+  },
+  {
+    "op": "resolve_conj",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/resolve_conj.py",
+    "reason": ""
+  },
+  {
     "op": "resolve_neg",
     "status": "done",
     "category": "pointwise",
@@ -1281,10 +6202,215 @@
     "reason": ""
   },
   {
+    "op": "rms_norm",
+    "status": "done",
+    "category": "normalization",
+    "file": "kernels/normalization/rms_norm.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_abs",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_abs.py"
+  },
+  {
+    "op": "rms_norm_clamp",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_clamp.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_cube",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_cube.py"
+  },
+  {
+    "op": "rms_norm_elu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_elu.py"
+  },
+  {
+    "op": "rms_norm_gelu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_gelu.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_hardshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_hardshrink.py"
+  },
+  {
+    "op": "rms_norm_hardsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_hardsigmoid.py"
+  },
+  {
+    "op": "rms_norm_hardswish",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_hardswish.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_hardtanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_hardtanh.py"
+  },
+  {
+    "op": "rms_norm_leaky_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_leaky_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_logsigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_logsigmoid.py"
+  },
+  {
+    "op": "rms_norm_neg",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_neg.py"
+  },
+  {
+    "op": "rms_norm_relu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_relu.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_relu6",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_relu6.py"
+  },
+  {
+    "op": "rms_norm_sigmoid",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_sigmoid.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_silu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_silu.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_softplus",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_softplus.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_softshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_softshrink.py"
+  },
+  {
+    "op": "rms_norm_softsign",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_square",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_square.py"
+  },
+  {
+    "op": "rms_norm_tanh",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_tanh.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_norm_tanhshrink",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rms_norm_tanhshrink.py"
+  },
+  {
+    "op": "rms_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/rms_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/rms_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/rms_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "rms_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/rms_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "rotary_embedding",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/rotary_embedding.py",
+    "reason": ""
+  },
+  {
     "op": "round",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/round.py",
+    "reason": ""
+  },
+  {
+    "op": "round_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/round_out.py",
+    "reason": ""
+  },
+  {
+    "op": "rrelu",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/rrelu.py",
+    "reason": ""
+  },
+  {
+    "op": "rrelu_",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/rrelu_.py",
     "reason": ""
   },
   {
@@ -1302,10 +6428,52 @@
     "reason": ""
   },
   {
+    "op": "rsqrt_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/rsqrt_out.py",
+    "reason": ""
+  },
+  {
     "op": "rsub",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/rsub.py",
+    "reason": ""
+  },
+  {
+    "op": "scaled_dot_product_attention",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/scaled_dot_product_attention.py",
+    "reason": ""
+  },
+  {
+    "op": "scaled_dot_product_attention_causal",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/scaled_dot_product_attention_causal.py",
+    "reason": ""
+  },
+  {
+    "op": "scaled_dot_product_attention_default_scale",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/scaled_dot_product_attention_default_scale.py",
+    "reason": ""
+  },
+  {
+    "op": "scaled_dot_product_attention_default_scale_causal",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/scaled_dot_product_attention_default_scale_causal.py",
+    "reason": ""
+  },
+  {
+    "op": "scaled_softmax",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/scaled_softmax.py",
     "reason": ""
   },
   {
@@ -1323,10 +6491,31 @@
     "reason": ""
   },
   {
+    "op": "selu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/selu_out.py",
+    "reason": ""
+  },
+  {
+    "op": "sgn",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sgn.py",
+    "reason": ""
+  },
+  {
     "op": "sgn_",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/sgn_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "sgn_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sgn_out.py",
     "reason": ""
   },
   {
@@ -1344,10 +6533,38 @@
     "reason": ""
   },
   {
+    "op": "sigmoid_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sigmoid_out.py",
+    "reason": ""
+  },
+  {
+    "op": "sign",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sign.py",
+    "reason": ""
+  },
+  {
+    "op": "sign_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sign_out.py",
+    "reason": ""
+  },
+  {
     "op": "signbit",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/signbit.py",
+    "reason": ""
+  },
+  {
+    "op": "signbit_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/signbit_out.py",
     "reason": ""
   },
   {
@@ -1365,6 +6582,20 @@
     "reason": ""
   },
   {
+    "op": "silu_and_mul",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/silu_and_mul.py",
+    "reason": ""
+  },
+  {
+    "op": "silu_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/silu_out.py",
+    "reason": ""
+  },
+  {
     "op": "sin",
     "status": "done",
     "category": "pointwise",
@@ -1379,10 +6610,160 @@
     "reason": ""
   },
   {
+    "op": "sin_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sin_out.py",
+    "reason": ""
+  },
+  {
+    "op": "sinh",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sinh.py",
+    "reason": ""
+  },
+  {
     "op": "sinh_",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/sinh_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "sinh_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sinh_out.py",
+    "reason": ""
+  },
+  {
+    "op": "skip_layernorm",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/skip_layernorm.py",
+    "reason": ""
+  },
+  {
+    "op": "slice_cols_even_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/slice_cols_even_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "slice_cols_inner_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/slice_cols_inner_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "slice_depth_inner_3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/slice_depth_inner_3d.py",
+    "reason": ""
+  },
+  {
+    "op": "slice_last_even_3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/slice_last_even_3d.py",
+    "reason": ""
+  },
+  {
+    "op": "slice_rows_even_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/slice_rows_even_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "slice_rows_inner_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/slice_rows_inner_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "smooth_l1_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/smooth_l1_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "soft_margin_loss",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/soft_margin_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "softmax",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax.py",
+    "reason": ""
+  },
+  {
+    "op": "softmax_entropy_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_entropy_width16.py"
+  },
+  {
+    "op": "softmax_entropy_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_entropy_width32.py"
+  },
+  {
+    "op": "softmax_entropy_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_entropy_width64.py"
+  },
+  {
+    "op": "softmax_entropy_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_entropy_width8.py"
+  },
+  {
+    "op": "softmax_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "softmax_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "softmax_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "softmax_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmax_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "softmin",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/softmin.py",
     "reason": ""
   },
   {
@@ -1393,10 +6774,150 @@
     "reason": ""
   },
   {
+    "op": "softplus_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/softplus_out.py",
+    "reason": ""
+  },
+  {
     "op": "softshrink",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/softshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "softshrink_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/softshrink_out.py",
+    "reason": ""
+  },
+  {
+    "op": "softsign",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/softsign.py",
+    "reason": ""
+  },
+  {
+    "op": "softsign_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/softsign_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_entr",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_entr.py",
+    "reason": ""
+  },
+  {
+    "op": "special_entr_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_entr_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_erf",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_erf.py",
+    "reason": ""
+  },
+  {
+    "op": "special_erf_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_erf_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_expit",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_expit.py",
+    "reason": ""
+  },
+  {
+    "op": "special_expit_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_expit_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_logit",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_logit.py",
+    "reason": ""
+  },
+  {
+    "op": "special_logit_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_logit_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_ndtr",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_ndtr.py",
+    "reason": ""
+  },
+  {
+    "op": "special_ndtr_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_ndtr_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_sinc",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_sinc.py",
+    "reason": ""
+  },
+  {
+    "op": "special_sinc_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_sinc_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_xlog1py",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_xlog1py.py",
+    "reason": ""
+  },
+  {
+    "op": "special_xlog1py_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_xlog1py_out.py",
+    "reason": ""
+  },
+  {
+    "op": "special_xlogy",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_xlogy.py",
+    "reason": ""
+  },
+  {
+    "op": "special_xlogy_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/special_xlogy_out.py",
     "reason": ""
   },
   {
@@ -1414,6 +6935,13 @@
     "reason": ""
   },
   {
+    "op": "sqrt_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sqrt_out.py",
+    "reason": ""
+  },
+  {
     "op": "square",
     "status": "done",
     "category": "pointwise",
@@ -1425,6 +6953,76 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/square_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "square_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/square_out.py",
+    "reason": ""
+  },
+  {
+    "op": "squeeze_dim0_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/squeeze_dim0_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "squeeze_dim1_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/squeeze_dim1_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "squeeze_dim1_3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/squeeze_dim1_3d.py",
+    "reason": ""
+  },
+  {
+    "op": "squeeze_dim2_3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/squeeze_dim2_3d.py",
+    "reason": ""
+  },
+  {
+    "op": "std",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/std.py",
+    "reason": ""
+  },
+  {
+    "op": "std_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/std_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "std_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/std_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "std_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/std_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "std_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/std_width8.py",
     "reason": ""
   },
   {
@@ -1442,6 +7040,211 @@
     "reason": ""
   },
   {
+    "op": "sub_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sub_out.py",
+    "reason": ""
+  },
+  {
+    "op": "sub_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sub_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "sub_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sub_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "sub_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sub_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "sub_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/sub_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "sum",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_abs_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_abs_width16.py"
+  },
+  {
+    "op": "sum_abs_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_abs_width32.py"
+  },
+  {
+    "op": "sum_abs_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_abs_width64.py"
+  },
+  {
+    "op": "sum_abs_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_abs_width8.py"
+  },
+  {
+    "op": "sum_exp_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_exp_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_exp_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_exp_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_exp_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_exp_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_exp_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_exp_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_keepdim_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_keepdim_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_keepdim_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_keepdim_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_keepdim_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_keepdim_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_keepdim_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_keepdim_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_sigmoid_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_sigmoid_width16.py"
+  },
+  {
+    "op": "sum_sigmoid_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_sigmoid_width32.py"
+  },
+  {
+    "op": "sum_sigmoid_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_sigmoid_width64.py"
+  },
+  {
+    "op": "sum_sigmoid_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_sigmoid_width8.py"
+  },
+  {
+    "op": "sum_square_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_square_width16.py"
+  },
+  {
+    "op": "sum_square_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_square_width32.py"
+  },
+  {
+    "op": "sum_square_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_square_width64.py"
+  },
+  {
+    "op": "sum_square_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_square_width8.py"
+  },
+  {
+    "op": "sum_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "sum_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/sum_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "swiglu",
+    "status": "done",
+    "category": "fused/general",
+    "file": "kernels/fused/general/swiglu.py",
+    "reason": ""
+  },
+  {
     "op": "tan",
     "status": "done",
     "category": "pointwise",
@@ -1453,6 +7256,13 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/tan_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "tan_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/tan_out.py",
     "reason": ""
   },
   {
@@ -1470,10 +7280,80 @@
     "reason": ""
   },
   {
+    "op": "tanh_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/tanh_out.py",
+    "reason": ""
+  },
+  {
+    "op": "tanhshrink",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/tanhshrink.py",
+    "reason": ""
+  },
+  {
+    "op": "tanhshrink_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/tanhshrink_out.py",
+    "reason": ""
+  },
+  {
+    "op": "tensordot",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/tensordot.py",
+    "reason": ""
+  },
+  {
     "op": "threshold",
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/threshold.py",
+    "reason": ""
+  },
+  {
+    "op": "threshold_",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/threshold_.py",
+    "reason": ""
+  },
+  {
+    "op": "threshold_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/threshold_out.py",
+    "reason": ""
+  },
+  {
+    "op": "to",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/to.py",
+    "reason": ""
+  },
+  {
+    "op": "transpose_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/transpose_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "triplet_margin_loss",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/triplet_margin_loss.py",
+    "reason": ""
+  },
+  {
+    "op": "triplet_margin_with_distance_loss",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/triplet_margin_with_distance_loss.py",
     "reason": ""
   },
   {
@@ -1498,6 +7378,41 @@
     "reason": ""
   },
   {
+    "op": "true_divide_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/true_divide_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "true_divide_scalar_left",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/true_divide_scalar_left.py",
+    "reason": ""
+  },
+  {
+    "op": "true_divide_scalar_left_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/true_divide_scalar_left_out.py",
+    "reason": ""
+  },
+  {
+    "op": "true_divide_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/true_divide_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "trunc",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/trunc.py",
+    "reason": ""
+  },
+  {
     "op": "trunc_divide",
     "status": "done",
     "category": "pointwise",
@@ -1509,6 +7424,174 @@
     "status": "done",
     "category": "pointwise",
     "file": "kernels/pointwise/trunc_divide_inplace.py",
+    "reason": ""
+  },
+  {
+    "op": "trunc_divide_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/trunc_divide_out.py",
+    "reason": ""
+  },
+  {
+    "op": "trunc_divide_scalar",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/trunc_divide_scalar.py",
+    "reason": ""
+  },
+  {
+    "op": "trunc_divide_scalar_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/trunc_divide_scalar_out.py",
+    "reason": ""
+  },
+  {
+    "op": "trunc_out",
+    "status": "done",
+    "category": "pointwise",
+    "file": "kernels/pointwise/trunc_out.py",
+    "reason": ""
+  },
+  {
+    "op": "unfold",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/unfold.py",
+    "reason": ""
+  },
+  {
+    "op": "unsqueeze_dim0_1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/unsqueeze_dim0_1d.py",
+    "reason": ""
+  },
+  {
+    "op": "unsqueeze_dim0_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/unsqueeze_dim0_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "unsqueeze_dim1_1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/unsqueeze_dim1_1d.py",
+    "reason": ""
+  },
+  {
+    "op": "unsqueeze_dim2_2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/unsqueeze_dim2_2d.py",
+    "reason": ""
+  },
+  {
+    "op": "upsample",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/upsample.py",
+    "reason": ""
+  },
+  {
+    "op": "upsample_bilinear",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/upsample_bilinear.py",
+    "reason": ""
+  },
+  {
+    "op": "upsample_linear1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/upsample_linear1d.py",
+    "reason": ""
+  },
+  {
+    "op": "upsample_nearest",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/upsample_nearest.py",
+    "reason": ""
+  },
+  {
+    "op": "upsample_nearest1d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/upsample_nearest1d.py",
+    "reason": ""
+  },
+  {
+    "op": "upsample_nearest2d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/upsample_nearest2d.py",
+    "reason": ""
+  },
+  {
+    "op": "upsample_nearest3d",
+    "status": "done",
+    "category": "layout",
+    "file": "kernels/layout/upsample_nearest3d.py",
+    "reason": ""
+  },
+  {
+    "op": "var",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/var.py",
+    "reason": ""
+  },
+  {
+    "op": "var_mean",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/var_mean.py",
+    "reason": ""
+  },
+  {
+    "op": "variance_width16",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/variance_width16.py",
+    "reason": ""
+  },
+  {
+    "op": "variance_width32",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/variance_width32.py",
+    "reason": ""
+  },
+  {
+    "op": "variance_width64",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/variance_width64.py",
+    "reason": ""
+  },
+  {
+    "op": "variance_width8",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/variance_width8.py",
+    "reason": ""
+  },
+  {
+    "op": "vdot",
+    "status": "done",
+    "category": "linear",
+    "file": "kernels/linear/vdot.py",
+    "reason": ""
+  },
+  {
+    "op": "vector_norm",
+    "status": "done",
+    "category": "reduction",
+    "file": "kernels/reduction/vector_norm.py",
     "reason": ""
   },
   {
@@ -1554,171 +7637,17 @@
     "reason": ""
   },
   {
-    "op": "_safe_softmax",
+    "op": "zeros",
     "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/safe_softmax.py",
+    "category": "creation",
+    "file": "kernels/creation/zeros.py",
     "reason": ""
   },
   {
-    "op": "all_dim",
+    "op": "zeros_like",
     "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/all_dim.py",
-    "reason": ""
-  },
-  {
-    "op": "all_dims",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/all_dims.py",
-    "reason": ""
-  },
-  {
-    "op": "amax",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/amax.py",
-    "reason": ""
-  },
-  {
-    "op": "aminmax",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/aminmax.py",
-    "reason": ""
-  },
-  {
-    "op": "any",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/any.py",
-    "reason": ""
-  },
-  {
-    "op": "any_dim",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/any_dim.py",
-    "reason": ""
-  },
-  {
-    "op": "any_dims",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/any_dims.py",
-    "reason": ""
-  },
-  {
-    "op": "log_softmax",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/log_softmax.py",
-    "reason": ""
-  },
-  {
-    "op": "logsumexp",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/logsumexp.py",
-    "reason": ""
-  },
-  {
-    "op": "max",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/max.py",
-    "reason": ""
-  },
-  {
-    "op": "max_dim",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/max_dim.py",
-    "reason": ""
-  },
-  {
-    "op": "mean",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/mean.py",
-    "reason": ""
-  },
-  {
-    "op": "mean_dim",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/mean_dim.py",
-    "reason": ""
-  },
-  {
-    "op": "mean_dim_comm",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/mean_dim_comm.py",
-    "reason": ""
-  },
-  {
-    "op": "min",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/min.py",
-    "reason": ""
-  },
-  {
-    "op": "min_dim",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/min_dim.py",
-    "reason": ""
-  },
-  {
-    "op": "scaled_softmax",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/scaled_softmax.py",
-    "reason": ""
-  },
-  {
-    "op": "softmax",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/softmax.py",
-    "reason": ""
-  },
-  {
-    "op": "std",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/std.py",
-    "reason": ""
-  },
-  {
-    "op": "sum",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/sum.py",
-    "reason": ""
-  },
-  {
-    "op": "var",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/var.py",
-    "reason": ""
-  },
-  {
-    "op": "var_mean",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/var_mean.py",
-    "reason": ""
-  },
-  {
-    "op": "vector_norm",
-    "status": "done",
-    "category": "reduction",
-    "file": "kernels/reduction/vector_norm.py",
+    "category": "creation",
+    "file": "kernels/creation/zeros_like.py",
     "reason": ""
   }
 ]

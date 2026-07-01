@@ -1,21 +1,36 @@
+import functools
+
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
-from ninetoothed import Tensor, block_size
+from ninetoothed import Tensor
 
-BLOCK_M = 1
-BLOCK_N = block_size()
 
-def arrangement(x, out):
-    return x.tile((BLOCK_M, BLOCK_N)), out.tile((BLOCK_M,))
+def arrangement(x, out, dim):
+    return x.tile((1, dim.value)), out.tile((1,)), dim
 
-def application(x, out):
-    out = ntl.sqrt(ntl.sum(x * x, axis=1) / 32.0 - (ntl.sum(x, axis=1) / 32.0) * (ntl.sum(x, axis=1) / 32.0))
 
-kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(1)), kernel_name="ntops_lab_std")
+def application(x, out, dim):
+    mean = ntl.sum(x, axis=1) / dim
+    var = ntl.sum(x * x, axis=1) / dim - mean * mean
+    out = ntl.sqrt(var)
+
+
+@functools.cache
+def _kernel(dim):
+    dim_tensor = Tensor(0, constexpr=True, value=dim, name="dim")
+    return ninetoothed.make(
+        arrangement,
+        application,
+        (Tensor(2), Tensor(1), dim_tensor),
+        kernel_name=f"ntops_lab_std_d{dim}",
+        max_num_configs=1,
+    )
+
 
 def run(*inputs):
     x, = inputs
     out = torch.empty((x.shape[0],), device=x.device, dtype=x.dtype)
-    kernel(x, out)
+    dim = x.shape[-1]
+    _kernel(dim)(x, out, dim)
     return out
