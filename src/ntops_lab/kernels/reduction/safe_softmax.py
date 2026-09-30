@@ -1,20 +1,21 @@
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
-from ninetoothed import Tensor, block_size
+from ninetoothed import Tensor
 
 BLOCK_M = 1
-BLOCK_N = block_size()
 
 def arrangement(x, out):
-    return x.tile((BLOCK_M, BLOCK_N)), out.tile((BLOCK_M, BLOCK_N))
+    return x.tile((BLOCK_M, -1)), out.tile((BLOCK_M, -1))
 
 def application(x, out):
     m = ntl.max(x, axis=1)
-    e = ntl.exp(x - m[:, None])
-    out = e / ntl.sum(e, axis=1)[:, None]
+    shifted = ntl.where(m[:, None] == float("-inf"), float("-inf"), x - m[:, None])
+    e = ntl.exp(shifted)
+    denom = ntl.sum(e, axis=1)[:, None]
+    out = e / ntl.where(denom == 0.0, 1.0, denom)
 
-kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(2)), kernel_name="ntops_lab_safe_softmax")
+kernel = ninetoothed.make(arrangement, application, (Tensor(2, other=float("-inf")), Tensor(2)), kernel_name="ntops_lab_safe_softmax")
 
 def run(*inputs):
     x, = inputs

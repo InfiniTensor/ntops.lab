@@ -3,24 +3,24 @@ import functools
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
-from ninetoothed import Tensor, block_size
+from ninetoothed import Tensor
 
 BLOCK_M = 1
-BLOCK_N = block_size()
 
 def arrangement(x, weight, bias, out, hidden):
-    x_arr = x.tile((BLOCK_M, BLOCK_N))
-    w_arr = weight.tile((BLOCK_N,))
+    x_arr = x.tile((BLOCK_M, hidden.value))
+    w_arr = weight.tile((hidden.value,))
     w_arr = w_arr.expand((x_arr.shape[0], -1))
-    b_arr = bias.tile((BLOCK_N,))
+    b_arr = bias.tile((hidden.value,))
     b_arr = b_arr.expand((x_arr.shape[0], -1))
-    return x_arr, w_arr, b_arr, out.tile((BLOCK_M, BLOCK_N)), hidden
+    return x_arr, w_arr, b_arr, out.tile((BLOCK_M, hidden.value)), hidden
 
 def application(x, weight, bias, out, hidden):
-    mean = ntl.sum(x, axis=1) / hidden
-    mean_square = ntl.sum(x * x, axis=1) / hidden
-    var = mean_square - mean * mean
-    out = (x - mean[:, None]) * ntl.rsqrt(var[:, None] + 1.0e-5) * weight + bias
+    value = x.to(ntl.float32)
+    mean = ntl.sum(value, axis=1) / hidden
+    centered = value - mean[:, None]
+    var = ntl.sum(centered * centered, axis=1) / hidden
+    out = (value - mean[:, None]) * ntl.rsqrt(var[:, None] + 1.0e-5) * weight + bias
 
 @functools.cache
 def _kernel(hidden):

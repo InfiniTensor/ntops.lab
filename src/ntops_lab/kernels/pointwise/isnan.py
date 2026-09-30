@@ -1,5 +1,6 @@
 import torch
 import ninetoothed
+import ninetoothed.language as ntl
 
 from ninetoothed import Tensor, block_size
 
@@ -9,7 +10,7 @@ def arrangement(x, out):
     return x.tile((BLOCK_SIZE,)), out.tile((BLOCK_SIZE,))
 
 def application(x, out):
-    out = x != x
+    out = ntl.libdevice.isnan(x) != 0
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(1), Tensor(1)), kernel_name="ntops_lab_isnan")
 

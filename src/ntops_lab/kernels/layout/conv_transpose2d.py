@@ -8,7 +8,7 @@ from ninetoothed import Tensor
 
 INPUT_PRECISION_IEEE = 2
 
-def _mm_arrangement(input, other, output, input_precision, block_size_m=16, block_size_n=16, block_size_k=16):
+def _mm_arrangement(input, other, output, input_precision, block_size_m=32, block_size_n=32, block_size_k=16):
     output_arranged = output.tile((block_size_m, block_size_n))
 
     input_arranged = input.tile((block_size_m, block_size_k))
@@ -48,7 +48,7 @@ def _conv2d_arrangement(input, weight, bias, output, input_precision, pad_h, pad
 
     output_arranged = output.permute((0, 2, 3, 1)).flatten(end_dim=3)
 
-    bias_arranged = bias_arranged.tile((16, 16))
+    bias_arranged = bias_arranged.tile((32, 32))
     input_arranged, weight_arranged, output_arranged, input_precision_arranged = _mm_arrangement(input_arranged, weight_arranged, output_arranged, input_precision)
     return input_arranged, weight_arranged, bias_arranged, output_arranged, input_precision_arranged
 

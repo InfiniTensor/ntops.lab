@@ -1,13 +1,12 @@
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
-from ninetoothed import Tensor, block_size
+from ninetoothed import Tensor
 
 BLOCK_M = 1
-BLOCK_N = block_size()
 
 def arrangement(x, out):
-    return x.tile((BLOCK_M, BLOCK_N)), out.tile((BLOCK_M,))
+    return x.tile((BLOCK_M, -1)), out.tile((BLOCK_M,))
 
 def application(x, out):
     out = ntl.min(x, axis=1)

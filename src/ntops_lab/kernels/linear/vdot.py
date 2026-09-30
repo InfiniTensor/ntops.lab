@@ -1,15 +1,14 @@
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
-from ninetoothed import Tensor, block_size
+from ninetoothed import Tensor
 
-BLOCK_N = block_size()
 
 def arrangement(x, y, out):
-    return x.tile((BLOCK_N,)), y.tile((BLOCK_N,)), out.tile((1,))
+    return x.unsqueeze(0).tile((1, -1)), y.unsqueeze(0).tile((1, -1)), out.tile((1,))
 
 def application(x, y, out):
-    out = ntl.sum(x * y)
+    out = ntl.sum(x * y, axis=1)
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(1), Tensor(1), Tensor(1)), kernel_name="ntops_lab_vdot")
 

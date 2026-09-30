@@ -3,9 +3,9 @@ import ninetoothed
 import ninetoothed.language as ntl
 from ninetoothed import Tensor, block_size
 
-BM = block_size()
-BN = block_size()
-BK = block_size()
+BM = block_size(upper_bound=64)
+BN = block_size(upper_bound=64)
+BK = block_size(upper_bound=64)
 
 def arrangement(a, b, out):
     out_arr = out.tile((BM, BN))
@@ -19,7 +19,7 @@ def application(a, b, out):
     acc = ntl.zeros(out.shape, dtype=ntl.float32)
     for k in range(a.shape[0]):
         acc += ntl.dot(a[k], b[k])
-    value = acc.to(ntl.float16)
+    value = acc.to(ntl.float16).to(ntl.float32)
     out = (ntl.where(value > 0.5, value, ntl.where(value < -0.5, value, 0.0))).to(ntl.float16)
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(2), Tensor(2)), kernel_name="ntops_lab_mm_hardshrink")

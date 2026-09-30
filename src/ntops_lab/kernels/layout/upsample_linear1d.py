@@ -25,16 +25,16 @@ def arrangement(x, out):
 
 def application(x, out):
     for i in range(16):
-        prev = x[i]
-        cur = x[i + 1]
-        nxt = x[i + 2]
+        prev = x[i].to(ntl.float32)
+        cur = x[i + 1].to(ntl.float32)
+        nxt = x[i + 2].to(ntl.float32)
         valid = x[i + 1].offsets(-1) < x.source.shape[-1]
         first = x[i + 1].offsets(-1) == 0
         last = x[i + 1].offsets(-1) == x.source.shape[-1] - 1
         even = ntl.where(first, cur, prev * 0.25 + cur * 0.75)
         odd = ntl.where(last, cur, cur * 0.75 + nxt * 0.25)
-        out[2 * i] = ntl.where(valid, even, out[2 * i])
-        out[2 * i + 1] = ntl.where(valid, odd, out[2 * i + 1])
+        out[2 * i] = ntl.where(valid, even, out[2 * i].to(ntl.float32))
+        out[2 * i + 1] = ntl.where(valid, odd, out[2 * i + 1].to(ntl.float32))
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(3, other=0.0), Tensor(3)), kernel_name="ntops_lab_upsample_linear1d_scale2_align_false", max_num_configs=1)
 

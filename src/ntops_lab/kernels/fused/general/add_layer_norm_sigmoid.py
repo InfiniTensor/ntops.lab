@@ -16,7 +16,7 @@ def application(x, residual, gamma, beta, out, hidden):
     centered = y - mean[:, None]
     var = ntl.sum(centered * centered, axis=1) / hidden
     value = centered * ntl.rsqrt(var[:, None] + 1.0e-5) * gamma + beta
-    out = ntl.sigmoid(value)
+    out = (1.0 / (1.0 + ntl.exp(-(value))))
 
 @functools.cache
 def _kernel(hidden):

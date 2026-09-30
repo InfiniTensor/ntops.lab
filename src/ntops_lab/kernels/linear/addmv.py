@@ -1,15 +1,14 @@
 import torch
 import ninetoothed
 import ninetoothed.language as ntl
-from ninetoothed import Tensor, block_size
+from ninetoothed import Tensor
 
-BM = block_size()
-BK = block_size()
+BM = 1
+BK = -1
 
 def arrangement(bias, a, x, out):
     a_arr = a.tile((BM, BK))
-    x_arr = x.tile((BK,))
-    x_arr = x_arr.expand((a_arr.shape[0], -1))
+    x_arr = x[None, :].expand((a.shape[0], -1)).tile((BM, BK))
     out_arr = out.tile((BM,))
     bias_arr = bias.tile((BM,))
     return bias_arr, a_arr, x_arr, out_arr

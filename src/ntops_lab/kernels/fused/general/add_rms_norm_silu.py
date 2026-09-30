@@ -13,7 +13,7 @@ def application(x, residual, weight, out, hidden):
     y = x + residual
     rrms = ntl.rsqrt(ntl.sum(y * y, axis=1) / hidden + 1.0e-5)
     value = y * rrms[:, None] * weight
-    out = value * ntl.sigmoid(value)
+    out = value * (1.0 / (1.0 + ntl.exp(-(value))))
 
 @functools.cache
 def _kernel(hidden):

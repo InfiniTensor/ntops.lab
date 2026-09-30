@@ -3,9 +3,9 @@ import ninetoothed
 import ninetoothed.language as ntl
 from ninetoothed import Tensor, block_size
 
-BM = block_size()
-BN = block_size()
-BK = block_size()
+BM = block_size(upper_bound=64)
+BN = block_size(upper_bound=64)
+BK = block_size(upper_bound=64)
 
 def arrangement(c, a, b, out):
     out_arr = out.tile((BM, BN))
@@ -21,7 +21,7 @@ def application(c, a, b, out):
     for k in range(a.shape[0]):
         acc += ntl.dot(a[k], b[k])
     value = c + acc
-    out = (value * ntl.sigmoid(value)).to(ntl.float16)
+    out = (value * (1.0 / (1.0 + ntl.exp(-(value))))).to(ntl.float16)
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(2), Tensor(2), Tensor(2), Tensor(2)), kernel_name="ntops_lab_addmm_silu")
 
