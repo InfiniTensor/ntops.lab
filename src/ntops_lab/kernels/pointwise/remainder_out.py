@@ -9,7 +9,8 @@ def arrangement(x, y, out):
     return x.tile((BLOCK_SIZE,)), y.tile((BLOCK_SIZE,)), out.tile((BLOCK_SIZE,))
 
 def application(x, y, out):
-    out = x - ntl.floor(x / y) * y
+    r = ntl.where(ntl.abs(x) < ntl.abs(y), x, ntl.libdevice.fmod(x, y))
+    out = ntl.where((r != 0.0) & ((r < 0.0) != (y < 0.0)), r + y, r)
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(1), Tensor(1), Tensor(1)), kernel_name="ntops_lab_remainder_out")
 

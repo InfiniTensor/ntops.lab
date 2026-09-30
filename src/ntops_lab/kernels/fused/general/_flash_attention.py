@@ -35,7 +35,7 @@ def application(q, k, v, is_causal, softmax_scale, out):
     m_i = ntl.full((q.shape[-2],), float("-inf"), dtype=ntl.float32)
 
     for i in range(k.shape[0]):
-        qk = ntl.dot(q_loaded, ntl.trans(k[i]))
+        qk = ntl.dot(q_loaded, ntl.trans(k[i])).to(ntl.float32)
         qk = ntl.where(k[i].offsets(-2) < k.source.shape[-2], qk, float("-inf"))
 
         if is_causal:

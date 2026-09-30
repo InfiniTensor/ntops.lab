@@ -12,8 +12,9 @@ def _kernel(classes):
         return x_for_logsumexp.tile((1, classes)), x_for_gather.tile((1, classes)), target_ids.tile((1, classes)), class_ids.tile((1, classes)), out.tile((1,))
 
     def application(x_for_logsumexp, x_for_gather, target_ids, class_ids, out):
-        log_z = ntl.log(ntl.sum(ntl.exp(x_for_logsumexp), axis=1))
-        selected = ntl.sum(x_for_gather * (target_ids == class_ids), axis=1)
+        maximum = ntl.max(x_for_logsumexp, axis=1)
+        log_z = maximum + ntl.log(ntl.sum(ntl.exp(x_for_logsumexp - maximum[:, None]), axis=1))
+        selected = ntl.sum(ntl.where(target_ids == class_ids, x_for_gather, 0.0), axis=1)
         out = log_z - selected
 
     return ninetoothed.make(

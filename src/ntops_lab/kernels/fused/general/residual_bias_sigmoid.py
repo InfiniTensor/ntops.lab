@@ -9,7 +9,7 @@ def arrangement(a, b, c, out):
     return a.tile((BLOCK_SIZE,)), b.tile((BLOCK_SIZE,)), c.tile((BLOCK_SIZE,)), out.tile((BLOCK_SIZE,))
 
 def application(a, b, c, out):
-    out = ntl.sigmoid((a + b + c))
+    out = (1.0 / (1.0 + ntl.exp(-(a + b + c))))
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(1), Tensor(1), Tensor(1), Tensor(1)), kernel_name="ntops_lab_residual_bias_sigmoid")
 

@@ -9,7 +9,7 @@ def arrangement(a, b, out):
     return a.tile((BLOCK_SIZE,)), b.tile((BLOCK_SIZE,)), out.tile((BLOCK_SIZE,))
 
 def application(a, b, out):
-    out = a * ntl.sigmoid(a) * b
+    out = a * (1.0 / (1.0 + ntl.exp(-(a)))) * b
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(1), Tensor(1), Tensor(1)), kernel_name="ntops_lab_gate_silu_mul")
 

@@ -9,7 +9,10 @@ def arrangement(x, out):
     return x.tile((BLOCK_SIZE,)), out.tile((BLOCK_SIZE,))
 
 def application(x, out):
-    out = ntl.floor(x + 0.5)
+    lower = ntl.floor(x)
+    fraction = x - lower
+    odd = lower - 2.0 * ntl.floor(lower * 0.5)
+    out = ntl.where(fraction > 0.5, lower + 1.0, ntl.where(fraction == 0.5, lower + odd, lower))
 
 kernel = ninetoothed.make(arrangement, application, (Tensor(1), Tensor(1)), kernel_name="ntops_lab_round_out")
 

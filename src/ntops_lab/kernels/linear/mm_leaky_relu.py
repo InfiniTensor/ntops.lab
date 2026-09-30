@@ -3,9 +3,9 @@ import ninetoothed
 import ninetoothed.language as ntl
 from ninetoothed import Tensor, block_size
 
-BM = block_size()
-BN = block_size()
-BK = block_size()
+BM = block_size(upper_bound=64)
+BN = block_size(upper_bound=64)
+BK = block_size(upper_bound=64)
 
 def _arrange_matmul(a, b, out):
     out_arr = out.tile((BM, BN))
